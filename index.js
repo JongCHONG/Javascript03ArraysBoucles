@@ -97,16 +97,13 @@ console.log(camarades[Math.floor(Math.random() * (max - min + 1) + min)])
 var min = 0
 var max = 100
 var arrayEntiers = []
+var intMax = 0
 
 for (i = 0; i <= 20; i++) {
     arrayEntiers[i] = Math.floor(Math.random() * (max - min + 1) + min)
-}
-console.log(arrayEntiers)
-
-var intMax = 0
-for (i = 0; i <= 20; i++) {
     if (arrayEntiers[i] > intMax) {
         intMax = arrayEntiers[i]
     }
 }
+console.log(arrayEntiers)
 console.log(intMax)
