@@ -46,7 +46,7 @@ console.log(result)
 //06 - Reverse
 
 var sentence = "Hello Konexio !"
-var table = sentence.split("")
+var table = sentence.split("") //Pas obligatoire car une chaine de character est un tableau
 var index = table.length - 1
 var resultat = ""
 while (index >= 0) {
@@ -99,11 +99,12 @@ var max = 100
 var arrayEntiers = []
 var intMax = 0
 
-for (i = 0; i <= 20; i++) {
+for (i = 0; i < 20; i++) {
     arrayEntiers[i] = Math.floor(Math.random() * (max - min + 1) + min)
     if (arrayEntiers[i] > intMax) {
         intMax = arrayEntiers[i]
     }
 }
+// arrayEntiers.push(number)
 console.log(arrayEntiers)
 console.log(intMax)
